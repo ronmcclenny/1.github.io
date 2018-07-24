@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <script src="https://unpkg.com/scrollreveal@3.4.0/dist/scrollreveal.min.js"></script>
+    <title>Portfolio Website | Web Designer</title>
+</head>
+<body>
+    
+    <div class="weapper">
+        <nav class="navBar">
+            <a href="#">
+                <img src="images/logo.svg" alt="logo">
+            </a>
+
+            <a href="#">
+                <img  id="btn" src="images/menu.svg" alt="btn">
+            </a>
+
+            <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+        </nav>
+
+             <div class="container">
+                <header id="header-main">
+                        <h1 class="anim">Sixth Co Magazine Design </h1>
+                </header>
+                <a class="anim" id="header-img" href="#"> <img src="images/img1.png" alt="main project"> </a> 
+            </div>
+
+            
+
+        <div class="work"> 
+            <a class="anim" href="#"><img src="images/img2.png" alt="project image"></a> 
+            <a class="anim" href="#"><img src="images/img3.png" alt="project image"></a> 
+            <a class="anim" href="#"><img src="images/img4.png" alt="project image"></a> 
+            <a class="anim" href="#"><img  src="images/img5.png" alt="project image"></a> 
+              
+        </div>
+
+
+        <div class="header2">
+            <h1 class="anim">Other Project</h1>
+            <p class="anim">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur error commodi aliquid quisquam officia itaque, vel quos sit odio autem?</p>
+
+        </div>
+
+            <div class="work2">
+                    <a class="anim" href="#"><img src="images/img3.png" alt="project image"></a>   
+                    <a class="anim" href="#"><img src="images/img2.png" alt="project image"></a>              
+
+            </div>
+
+            <footer>
+                <p class="anim">Sixth Studio | Portfolio</p>
+            </footer>
+
+
+    </div>
+
+            <script>
+                window.sr = ScrollReveal ();
+                sr.reveal('.anim');
+
+                (function() {
+            var menu = document.querySelector('ul'),
+                menulink = document.querySelector('#btn');
+
+            menulink.addEventListener('click',function(e) {
+             menu.classList.toggle('active');
+                e.preventDefault();
+            });
+        })();
+
+
+//            $('.active').animateCss('fade delay-2s');
+
+
+            </script>
+    
+</body>
+</html>

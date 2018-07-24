@@ -1,0 +1,412 @@
+/* * {
+    
+    padding: 0;
+    border: none;
+    outline: none;
+    vertical-align: baseline;
+} */
+
+
+@font-face {
+  font-family: "Brandon-Text";
+  src: url("https://www.bu.edu/cdn/fonts/BrandonText-Regular/2BA300_7_0.eot");
+  src: url("https://www.bu.edu/cdn/fonts/BrandonText-Regular/2BA300_7_0.eot?#iefix") format("embedded-opentype"),
+       url("https://www.bu.edu/cdn/fonts/BrandonText-Regular/2BA300_7_0.woff") format("woff"),
+       url("https://www.bu.edu/cdn/fonts/BrandonText-Regular/2BA300_7_0.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Brandon-Text";
+  src: url("https://www.bu.edu/cdn/fonts/BrandonText-Medium/2BA300_8_0.eot");
+  src: url("https://www.bu.edu/cdn/fonts/BrandonText-Medium/2BA300_8_0.eot?#iefix") format("embedded-opentype"),
+       url("https://www.bu.edu/cdn/fonts/BrandonText-Medium/2BA300_8_0.woff") format("woff"),
+       url("https://www.bu.edu/cdn/fonts/BrandonText-Medium/2BA300_8_0.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+
+@font-face {
+  font-family: "Brandon-Text";
+  src: url("https://www.bu.edu/cdn/fonts/BrandonText-Bold/2BA300_1_0.eot");
+  src: url("https://www.bu.edu/cdn/fonts/BrandonText-Bold/2BA300_1_0.eot?#iefix") format("embedded-opentype"),
+       url("https://www.bu.edu/cdn/fonts/BrandonText-Bold/2BA300_1_0.woff") format("woff"),
+       url("https://www.bu.edu/cdn/fonts/BrandonText-Bold/2BA300_1_0.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+
+
+
+
+
+body, html {
+    font-family: "Brandon-Text";
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background: #FBFBFB;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.narBar::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+h1 {
+    color: #2A2A2A;
+    font-size: 48px; 
+    margin-top: 140px;
+
+}
+
+p {
+    color: #2A2A2A;
+    font-size: 16px;
+    font-weight: 300;
+
+}
+
+
+/* navbar */
+
+nav {
+    padding-left: 50px;
+    height: 70px;
+    line-height: 70px;
+}
+
+nav a img {
+    padding-right: 50px;
+    vertical-align: middle;
+    width: 20px;
+    height: 30px;
+}
+
+nav a:nth-child(2) {
+    float: right;
+}
+
+.active {
+    position: absolute;
+    display: block;
+    background:#fff;
+    width: 30%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 1;
+    
+}
+
+
+ul li a:hover {
+    color: #D9BB7B;
+}
+
+ul {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    color: #2A2A2A;
+    text-decoration: none;
+    text-transform: none;
+    font-size: 16px;
+    /* display: block; */
+    padding-top: 50px;
+    padding-left: 200px;
+    /* padding: .5em 5em; */
+    background-color:#fff ;
+    
+}
+
+
+
+
+/* header */
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 60%;
+    margin: 120px;
+}
+
+#header-main {
+
+    width: 70%;
+}
+
+#header-main h1 {
+    width: 100%;
+}
+
+
+#header-img {
+    
+    width: 90%;
+
+}
+
+
+.container img {
+    width: 80%;
+    transition: all .31s ease-in-out;
+    -webkit-transition: all .31s ease-in-out;
+}
+
+.container img:hover {
+    width: 80%;
+    transform: translate(0,-4px);
+    -webkit-transition: all .31s ease-in-out;
+    -webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
+    box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
+}
+
+#header h1 {
+    float: left;
+}
+
+
+#header p {
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* row */
+
+.work {
+    width: 100%;
+    text-align: center;
+}
+
+.work img {
+    margin: 1%;
+    width: 45%;
+}
+
+/* header2 */
+
+.header2 {
+    text-align: center;
+    margin: 130px 0 80px 40px;
+}
+
+
+/* .work2 */
+
+.work2 {
+    text-align: center;
+    width: 100%;
+}
+
+.work2 img {
+    margin: 1%;
+    width: 45%;
+}
+
+/* footer */
+
+footer p {
+    text-align: center;
+    color: #343434;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+
+/* responsiveness */
+
+
+@media only screen and (max-width: 1259px) {
+
+   
+
+    .container {
+        display: grid; 
+        grid-template-columns: auto;
+        margin: 100px 0 100px 30px; 
+        text-align: center;
+        }
+
+        .container img {
+            margin-top: 30px;
+            /* margin-right: 50pc; */
+            
+            
+        }
+
+        #header-main h1 {
+            font-size: 28px;
+            margin-left: 140px;       
+}
+        #header-img {
+            width: 100%;
+        }
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1259px) {
+
+   
+
+    .container {
+        display: grid; 
+        grid-template-columns: auto;
+        margin: 100px 0 100px 30px; 
+        text-align: center;
+        }
+
+        .container img {
+            margin-top: 30px;
+            /* margin-right: 50pc; */
+            
+            
+        }
+
+        #header-main h1 {
+            font-size: 28px;
+            margin-left: 140px;       
+}
+
+nav {
+
+padding-left: 50px;
+}
+
+        p{
+            font-size: 26px; 
+        }
+
+        }
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    container {
+        text-align: left;
+         margin: 100px 0 100px 30px; 
+    }
+
+    .container {
+    display: grid; 
+    grid-template-columns: auto;
+    margin: 100px 0 100px 30px; 
+    text-align: center;
+    }
+
+    .container img {
+        margin-top: 30px;
+        padding-right: 70px;
+        
+    }
+    nav a img {
+        padding-right: 35px;
+        vertical-align: middle;
+        width: 20px;
+        height: 30px;
+    }
+
+    .header2 {
+        margin: auto;
+    }
+
+    #header-main {
+        width: 100%;
+    }
+
+    
+    #header-main h1 {
+        font-size: 20px;
+        margin-top: 75px;
+         
+    }
+
+    #header-img {
+        /* display: none; */
+        /* padding-left: 50px; */
+         
+    }
+
+    .work img {
+        margin: 2%;
+        width: 90%;
+    }
+
+    .work2 {
+    display: grid; 
+    grid-template-columns: auto;
+    }
+
+    .work2 img {
+        vertical-align: middle;
+        width: 90%;
+    }
+
+    p {
+        font-size: 26px;
+    }
+}
+
+
+/* iphone x */
+@media only screen and (max-width: 400px) {
+    #header-main h1 {
+        font-size: 12px;
+        
+        width: 100%;
+         
+    }
+
+    .container img {
+        width: 100%
+    }
+
+    .container {
+    display: grid; 
+    grid-template-columns: 10% 60%;
+    }
+    
+    #header-img {
+        /* display: none; */
+         
+    }
+
+    .work img {
+        margin: 2%;
+        width: 90%;
+    }
+
+
+}
+
