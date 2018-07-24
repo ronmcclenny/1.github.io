@@ -100,6 +100,7 @@ nav a:nth-child(2) {
 .active {
     position: absolute;
     display: block;
+    padding-top: 10%;
     background:#fff;
     width: 30%;
     left: 0;
