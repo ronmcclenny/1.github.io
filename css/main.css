@@ -80,6 +80,7 @@ p {
 /* navbar */
 
 nav {
+    padding-top: 50px;
     padding-left: 50px;
     height: 70px;
     line-height: 70px;
